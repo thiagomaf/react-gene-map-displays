@@ -1,0 +1,26 @@
+[
+  {
+    "index": 0,
+    "id_ENSA": "ECAAAAA",
+    "label": "Lorem 1",
+    "construct": {
+      "id_ENSA": ["ECXXXXX", "ECYYYYY", "ECWWWWW"]
+    }
+  },
+  {
+    "index": 1,
+    "id_ENSA": "ECEEEEE",
+    "label": "Lorem 2",
+    "construct": {
+      "id_ENSA": ["ECXXXXX", "ECZZZZZ", "ECWWWWW"]
+    }
+  },
+  {
+    "index": 2,
+    "id_ENSA": "ECIIIII",
+    "label": "Lorem 3",
+    "construct": {
+      "id_ENSA": ["ECXXXXX", "ECYYYYY"]
+    }
+  }
+]

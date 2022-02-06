@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default class Display extends React.Component {
   static defaultProps = {
@@ -6,46 +6,44 @@ export default class Display extends React.Component {
   };
 
   getYpos(eachGene) {
-    let pos = null
-    pos = this.props.height / (this.props.genes.length + 1)
-    pos = pos * (eachGene.index + 1)
+    let pos = null;
+    pos = this.props.height / (this.props.L0.length + 1);
+    pos = pos * (eachGene.index + 1);
 
-    return pos
-  };
+    return pos;
+  }
 
   getL0Xpos(eachGene) {
-    let pos = null
-    pos = this.props.x + 0.1*this.props.width
+    let pos = null;
+    pos = this.props.x + 0.1 * this.props.width;
 
-    return pos
+    return pos;
   }
 
   render() {
-    return(
-      this.props.genes.map((element) => {
-        let each_Ypos = this.getYpos(element)
+    return this.props.L0.map((element, index) => {
+      let each_Ypos = this.getYpos(element);
 
-        return(
-          <g class="L0_module">       
-            <rect // track behind
-              x      = "0%"
-              y      = {each_Ypos}
-              class  = "track"
-            />
+      return (
+        <g key={element.id_ENSA}>
+          <rect // track behind
+            x="0%"
+            y={each_Ypos}
+            className="track"
+          />
 
-            <rect // L0 main body
-              x     = "10%"
-              y     = {each_Ypos}
-              fill  = {element.color}
-              class = "module"
-            />
-            
-            <text x="50%" y={each_Ypos}>
-              {element.label}
-            </text>
-          </g>
-        )
-      })
-    )
+          <rect // L0 main body
+            x="10%"
+            y={each_Ypos}
+            fill={element.color}
+            className="module"
+          />
+
+          <text x="50%" y={each_Ypos}>
+            {element.label}
+          </text>
+        </g>
+      );
+    });
   }
 }

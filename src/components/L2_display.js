@@ -6,39 +6,37 @@ function range(start, end) {
     .map((_, idx) => start + idx);
 }
 
-class L1Construct extends React.Component {
-  //static defaultProps = { DisplayAreaPerc: 80 };
-
+class L2Construct extends React.Component {
   constructor(props) {
     super(props);
     this.DisplayAreaPerc = 80;
   }
 
   get length() {
-    return this.props.L1.construct.id_ENSA.length;
+    return this.props.L2.construct.id_ENSA.length;
   }
 
   get BlockWidthPerc() {
-    return this.DisplayAreaPerc / this.props.L1.construct.id_ENSA.length;
+    return this.DisplayAreaPerc / this.props.L2.construct.id_ENSA.length;
+  }
+
+  get Labels() {
+    return this.props.L2.construct.id_ENSA;
   }
 
   get MarginPerc() {
     return (100 - this.DisplayAreaPerc) / 2;
   }
 
-  get Labels() {
-    return this.props.L1.construct.label;
-  }
-
   DrawRect(index) {
     let PosX = this.MarginPerc + index * this.BlockWidthPerc;
+    console.log(this.BlockWidthPerc);
 
     return (
-      <rect // L0 main body
+      <rect // L2 main body
         x={`${PosX}%`}
         y={this.props.y}
         width={`${this.BlockWidthPerc}%`}
-        //fill  = {element.color}
         fill="white"
         className="module"
       />
@@ -71,14 +69,14 @@ class L1Construct extends React.Component {
 export default class Display extends React.Component {
   getYpos(eachGene) {
     let pos = null;
-    pos = this.props.height / (this.props.L1.length + 1);
+    pos = this.props.height / (this.props.L2.length + 1);
     pos = pos * (eachGene.index + 1);
 
     return pos;
   }
 
   render() {
-    return this.props.L1.map((element) => {
+    return this.props.L2.map((element) => {
       let each_Ypos = this.getYpos(element);
 
       return (
@@ -89,7 +87,7 @@ export default class Display extends React.Component {
             className="track"
           />
 
-          <L1Construct L1={element} y={each_Ypos} />
+          <L2Construct L2={element} y={each_Ypos} />
         </g>
       );
     });

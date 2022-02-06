@@ -1,30 +1,42 @@
 [
   {
-    "index":     0,
-    "id_ENSA":   "ECXXXXX",
-    "label":     "pZmUBI",
+    "index": 0,
+    "id_ENSA": "ECXXXXX",
+    "label": "pZmUBI",
     "construct": {
-      "id_ENSA": [
-        "ECPPPPP",
-        "ECUUUUU",
-        "ECSSSSS",
-        "ECCCCCC",
-        "ECTTTTT"
-      ],
-      "label": [
-        "P",
-        "U",
-        "S",
-        "C",
-        "T"
-      ],
-      "L1_position": [
-        "P",
-        "U",
-        "S",
-        "C",
-        "T"
-      ]
+      "id_ENSA": ["ECPPPPP", "ECUUUUU", "ECSSSSS", "ECCCCCC", "ECTTTTT"],
+      "label": ["P", "U", "S", "C", "T"],
+      "L1_position": ["P", "U", "S", "C", "T"]
+    }
+  },
+  {
+    "index": 1,
+    "id_ENSA": "ECYYYYY",
+    "label": "pLjUBI",
+    "construct": {
+      "id_ENSA": ["ECPUPUP", "ECSSSSS", "ECCCCCC", "ECTTTTT"],
+      "label": ["PU", "S", "C", "T"],
+      "L1_position": ["PU", "S", "C", "T"]
+    }
+  },
+  {
+    "index": 2,
+    "id_ENSA": "ECZZZZZ",
+    "label": "pLjUBI",
+    "construct": {
+      "id_ENSA": ["ECPUPUP", "ECSC1SC", "EC2C2C", "ECTTTTT"],
+      "label": ["PU", "SC1", "C2", "T"],
+      "L1_position": ["PU", "SC1", "C2", "T"]
+    }
+  },
+  {
+    "index": 3,
+    "id_ENSA": "ECWWWWW",
+    "label": "pLjUBI",
+    "construct": {
+      "id_ENSA": ["ECPUPUP", "ECSCSCS", "ECTTTTT"],
+      "label": ["PU", "SC", "T"],
+      "L1_position": ["PU", "SC", "T"]
     }
   }
 ]

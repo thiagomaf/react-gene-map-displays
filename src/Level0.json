@@ -1,72 +1,92 @@
 [
   {
-    "index":       0,
-    "id_ENSA":     "EC61132",
-    "CAP":         "HHH",
-    "label":       "pZmUBI",
+    "index": 0,
+    "id_ENSA": "ECPPPPP",
+    "CAP": null,
+    "label": "P",
     "L1_position": "P",
-    "id_name":     "pL0M-P-pZmUBI-intron1-61132",
-    "owner":       "Thiago",
-    "color":       "blue"
+    "id_name": null,
+    "owner": null,
+    "color": "white"
   },
   {
-    "index":       1,
-    "id_ENSA":     "EC15062",
-    "CAP":         null,
-    "label":       "pAtUbi",
-    "L1_position": "PU",
-    "id_name":     "pL0M-PU-pAtUbi10-15062",
-    "owner":       "Ben Miller",
-    "color":       "orange"
-  },
-  {
-    "index":       2,
-    "id_ENSA":     "ECPPPPP",
-    "CAP":         null,
-    "label":       "P",
-    "L1_position": "P",
-    "id_name":     null,
-    "owner":       null,
-    "color":       "white"
-  },
-  {
-    "index":       3,
-    "id_ENSA":     "ECUUUUU",
-    "CAP":         null,
-    "label":       "U",
+    "index": 1,
+    "id_ENSA": "ECUUUUU",
+    "CAP": null,
+    "label": "U",
     "L1_position": "U",
-    "id_name":     null,
-    "owner":       null,
-    "color":       "white"
+    "id_name": null,
+    "owner": null,
+    "color": "white"
   },
   {
-    "index":       4,
-    "id_ENSA":     "ECSSSSS",
-    "CAP":         null,
-    "label":       "S",
+    "index": 2,
+    "id_ENSA": "ECSSSSS",
+    "CAP": null,
+    "label": "S",
     "L1_position": "S",
-    "id_name":     null,
-    "owner":       null,
-    "color":       "white"
+    "id_name": null,
+    "owner": null,
+    "color": "white"
   },
   {
-    "index":       5,
-    "id_ENSA":     "ECCCCCC",
-    "CAP":         null,
-    "label":       "C",
+    "index": 3,
+    "id_ENSA": "ECCCCCC",
+    "CAP": null,
+    "label": "C",
     "L1_position": "C",
-    "id_name":     null,
-    "owner":       null,
-    "color":       "white"
+    "id_name": null,
+    "owner": null,
+    "color": "white"
   },
   {
-    "index":       6,
-    "id_ENSA":     "ECTTTTT",
-    "CAP":         null,
-    "label":       "T",
+    "index": 4,
+    "id_ENSA": "ECTTTTT",
+    "CAP": null,
+    "label": "T",
     "L1_position": "T",
-    "id_name":     null,
-    "owner":       null,
-    "color":       "white"
+    "id_name": null,
+    "owner": null,
+    "color": "white"
+  },
+  {
+    "index": 5,
+    "id_ENSA": "ECPUPUP",
+    "CAP": null,
+    "label": "PU",
+    "L1_position": "PU",
+    "id_name": null,
+    "owner": null,
+    "color": "white"
+  },
+  {
+    "index": 6,
+    "id_ENSA": "ECSCSCS",
+    "CAP": null,
+    "label": "SC",
+    "L1_position": "SC",
+    "id_name": null,
+    "owner": null,
+    "color": "white"
+  },
+  {
+    "index": 7,
+    "id_ENSA": "ECSC1SC",
+    "CAP": null,
+    "label": "SC1",
+    "L1_position": "SC1",
+    "id_name": null,
+    "owner": null,
+    "color": "white"
+  },
+  {
+    "index": 8,
+    "id_ENSA": "ECC2C2C",
+    "CAP": null,
+    "label": "C2/C4",
+    "L1_position": "C2",
+    "id_name": null,
+    "owner": null,
+    "color": "white"
   }
 ]
