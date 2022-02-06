@@ -1,0 +1,30 @@
+[
+  {
+    "index":     0,
+    "id_ENSA":   "ECXXXXX",
+    "label":     "pZmUBI",
+    "construct": {
+      "id_ENSA": [
+        "ECPPPPP",
+        "ECUUUUU",
+        "ECSSSSS",
+        "ECCCCCC",
+        "ECTTTTT"
+      ],
+      "label": [
+        "P",
+        "U",
+        "S",
+        "C",
+        "T"
+      ],
+      "L1_position": [
+        "P",
+        "U",
+        "S",
+        "C",
+        "T"
+      ]
+    }
+  }
+]
