@@ -30,14 +30,36 @@ class L1Construct extends React.Component {
     return this.props.L1.construct.label;
   }
 
+  get Positions() {
+    return this.props.L1.construct.L1_position;
+  }
+
+  get PositionsMap() {
+    return {
+      P: { x: 0, width: 14 },
+      PU: { x: 0, width: 28 },
+      U: { x: 14, width: 14 },
+      S: { x: 28, width: 14 },
+      C: { x: 42, width: 28 },
+      T: { x: 70, width: 10 },
+      SC: { x: 28, width: 42 },
+      SC1: { x: 28, width: 28 },
+      C1: { x: 42, width: 14 },
+      C2: { x: 56, width: 14 }
+    };
+  }
+
   DrawRect(index) {
-    let PosX = this.MarginPerc + index * this.BlockWidthPerc;
+    //let PosX = this.MarginPerc + index * this.BlockWidthPerc;
+    let PosX = this.PositionsMap[this.Positions[index]].x + this.MarginPerc;
+    let Width = this.PositionsMap[this.Positions[index]].width;
 
     return (
       <rect // L0 main body
         x={`${PosX}%`}
         y={this.props.y}
-        width={`${this.BlockWidthPerc}%`}
+        //width={`${this.BlockWidthPerc}%`}
+        width={`${Width}%`}
         //fill  = {element.color}
         fill="white"
         className="module"
@@ -46,12 +68,14 @@ class L1Construct extends React.Component {
   }
 
   DrawText(index) {
-    let PosX =
-      this.MarginPerc + index * this.BlockWidthPerc + this.BlockWidthPerc / 2;
+    //let PosX = this.MarginPerc + index * this.BlockWidthPerc + this.BlockWidthPerc / 2;
+    let PosX = null;
+    PosX = this.PositionsMap[this.Positions[index]].x + this.MarginPerc;
+    PosX = PosX + this.PositionsMap[this.Positions[index]].width / 2;
 
     return (
       <text x={`${PosX}%`} y={this.props.y} width={`${this.BlockWidthPerc}%`}>
-        {this.Labels[index]}
+        {this.Positions[index]}
       </text>
     );
   }
@@ -59,7 +83,7 @@ class L1Construct extends React.Component {
   render() {
     return range(0, this.length - 1).map((index) => {
       return (
-        <g key={this.Labels[index]}>
+        <g key={this.Positions[index]}>
           {this.DrawRect(index)}
           {this.DrawText(index)}
         </g>

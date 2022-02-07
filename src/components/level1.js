@@ -43,7 +43,7 @@ export default class Level1 extends React.Component {
         }
       };
     });
-    console.log(updatedL1);
+    //console.log(updatedL1);
 
     return (
       <svg width={this.props.width} height={this.props.height}>
