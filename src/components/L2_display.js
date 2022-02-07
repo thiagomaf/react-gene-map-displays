@@ -30,7 +30,7 @@ class L2Construct extends React.Component {
 
   DrawRect(index) {
     let PosX = this.MarginPerc + index * this.BlockWidthPerc;
-    console.log(this.BlockWidthPerc);
+    //console.log(this.BlockWidthPerc);
 
     return (
       <rect // L2 main body

@@ -81,9 +81,19 @@
   },
   {
     "index": 8,
+    "id_ENSA": "EC1C1C",
+    "CAP": null,
+    "label": "C1",
+    "L1_position": "C1",
+    "id_name": null,
+    "owner": null,
+    "color": "white"
+  },
+  {
+    "index": 9,
     "id_ENSA": "ECC2C2C",
     "CAP": null,
-    "label": "C2/C4",
+    "label": "C2",
     "L1_position": "C2",
     "id_name": null,
     "owner": null,
