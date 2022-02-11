@@ -5,12 +5,6 @@ import Level2 from "./components/level2";
 import "./style.css";
 
 export default class App extends React.Component {
-  state = { dataSetIndex: 0 };
-
-  selectDataset(event) {
-    this.setState({ dataSetIndex: event.target.value });
-  }
-
   render() {
     return (
       <div id="main">
@@ -38,5 +32,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-//<Graph data={this.props.datasets[this.state.dataSetIndex]} />

@@ -7,7 +7,7 @@
     "L1_position": "P",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#800080"
   },
   {
     "index": 1,
@@ -17,7 +17,7 @@
     "L1_position": "U",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#FF00FF"
   },
   {
     "index": 2,
@@ -27,7 +27,7 @@
     "L1_position": "S",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#FF0000"
   },
   {
     "index": 3,
@@ -37,7 +37,7 @@
     "L1_position": "C",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#008080"
   },
   {
     "index": 4,
@@ -47,7 +47,7 @@
     "L1_position": "T",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#808080"
   },
   {
     "index": 5,
@@ -57,7 +57,7 @@
     "L1_position": "PU",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#BB00BB"
   },
   {
     "index": 6,
@@ -67,7 +67,7 @@
     "L1_position": "SC",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#404080"
   },
   {
     "index": 7,
@@ -77,7 +77,7 @@
     "L1_position": "SC1",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#808000"
   },
   {
     "index": 8,
@@ -87,7 +87,7 @@
     "L1_position": "C1",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#00FF00"
   },
   {
     "index": 9,
@@ -97,6 +97,6 @@
     "L1_position": "C2",
     "id_name": null,
     "owner": null,
-    "color": "white"
+    "color": "#0000FF"
   }
 ]

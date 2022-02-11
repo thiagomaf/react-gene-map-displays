@@ -9,7 +9,6 @@ export default class Level0 extends React.Component {
     return (
       <svg width={this.props.width} height={this.props.height}>
         <Axes x={0} y="100%" />
-
         <Display L0={this.props.L0} height={this.props.height} />
       </svg>
     );

@@ -14,12 +14,14 @@ class L1Construct extends React.Component {
     this.DisplayAreaPerc = 80;
   }
 
+  getProperty(index) {}
+
   get length() {
-    return this.props.L1.construct.id_ENSA.length;
+    return this.props.L1.construct.length;
   }
 
   get BlockWidthPerc() {
-    return this.DisplayAreaPerc / this.props.L1.construct.id_ENSA.length;
+    return this.DisplayAreaPerc / this.length;
   }
 
   get MarginPerc() {
@@ -27,11 +29,21 @@ class L1Construct extends React.Component {
   }
 
   get Labels() {
-    return this.props.L1.construct.label;
+    return this.props.L1.construct.map((el) => {
+      return el.label;
+    });
   }
 
   get Positions() {
-    return this.props.L1.construct.L1_position;
+    return this.props.L1.construct.map((el) => {
+      return el.L1_position;
+    });
+  }
+
+  get Colors() {
+    return this.props.L1.construct.map((el) => {
+      return el.color;
+    });
   }
 
   get PositionsMap() {
@@ -50,7 +62,6 @@ class L1Construct extends React.Component {
   }
 
   DrawRect(index) {
-    //let PosX = this.MarginPerc + index * this.BlockWidthPerc;
     let PosX = this.PositionsMap[this.Positions[index]].x + this.MarginPerc;
     let Width = this.PositionsMap[this.Positions[index]].width;
 
@@ -58,17 +69,14 @@ class L1Construct extends React.Component {
       <rect // L0 main body
         x={`${PosX}%`}
         y={this.props.y}
-        //width={`${this.BlockWidthPerc}%`}
         width={`${Width}%`}
-        //fill  = {element.color}
-        fill="white"
+        fill={this.Colors[index]}
         className="module"
       />
     );
   }
 
   DrawText(index) {
-    //let PosX = this.MarginPerc + index * this.BlockWidthPerc + this.BlockWidthPerc / 2;
     let PosX = null;
     PosX = this.PositionsMap[this.Positions[index]].x + this.MarginPerc;
     PosX = PosX + this.PositionsMap[this.Positions[index]].width / 2;

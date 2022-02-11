@@ -12,7 +12,7 @@
     "id_ENSA": "ECYYYYY",
     "label": "pLjUBI",
     "construct": {
-      "id_ENSA": ["ECPUPUP", "ECSSSSS", "EC1C1C", "EC2C2C", "ECTTTTT"]
+      "id_ENSA": ["ECPUPUP", "ECSSSSS", "EC1C1C", "ECC2C2C", "ECTTTTT"]
     }
   },
   {
@@ -20,7 +20,7 @@
     "id_ENSA": "ECZZZZZ",
     "label": "pLjUBI",
     "construct": {
-      "id_ENSA": ["ECPUPUP", "ECSC1SC", "EC2C2C", "ECTTTTT"]
+      "id_ENSA": ["ECPUPUP", "ECSC1SC", "ECC2C2C", "ECTTTTT"]
     }
   },
   {
