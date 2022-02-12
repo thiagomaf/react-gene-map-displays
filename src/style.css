@@ -1,12 +1,13 @@
-h1,
-p {
-  font-family: Lato;
-}
-
 :root {
+  --display-area: 80%;
+  --display-margin: calc(calc(100% - var(--display-area)) / 2);
   --main-grid-margin: 5px;
   --module-height: 8%;
   --module-track-height: 2%;
+  --module-L2-margin: 5%;
+  --module-L2-width: calc(
+    calc(var(--display-area) - var(--module-L2-margin)) / var(--max-L2-number)
+  );
 }
 
 #main {
@@ -34,24 +35,117 @@ svg rect.track {
   transform: translate(0, calc(var(--module-track-height) / -2));
 }
 
-#Level0 svg rect.module {
-  width: 80%;
-}
-
-#Level1 svg rect.module {
-  transform: translate(0, calc(var(--module-height) / -2));
+svg text {
+  font-size: 18px;
+  font-family: Arial;
+  text-anchor: middle;
+  dominant-baseline: middle;
 }
 
 svg rect.module {
-  stroke-width: 3;
-  stroke: black;
   height: var(--module-height);
   transform: translate(0, calc(var(--module-height) / -2));
 }
 
-svg text {
-  font-size: 24px;
-  font-family: Arial;
-  text-anchor: middle;
-  dominant-baseline: middle;
+svg .module.border {
+  stroke-width: 3;
+  stroke: black;
+}
+
+#Level0 svg .module {
+  width: var(--display-area);
+}
+
+#Level1 svg .module {
+  /**/
+}
+
+#Level2 svg .L2 .L1 {
+  --xPos: calc(
+    var(--display-margin) + var(--index) *
+      calc(
+        calc(var(--display-area) + var(--module-L2-margin)) /
+          var(--max-L2-number)
+      )
+  );
+}
+
+#Level2 svg .L2 .L1 g rect.L1 {
+  /*transform: translate(var(--display-margin), calc(var(--module-height) / -2));*/
+  x: var(--xPos);
+}
+
+#Level2 svg .L2 .L1 text.L1 {
+  x: var(--xPos);
+  width: var(--module-L2-width);
+  transform: translate(calc(var(--module-L2-width) / 2), 0);
+}
+
+#Level2 svg .L1.module {
+  width: var(--module-L2-width);
+}
+
+#Level2 svg .L0.P {
+  width: calc(14% / var(--max-L2-number));
+  transform: translate(0, calc(var(--module-height) / -2));
+}
+#Level2 svg .L0.PU {
+  width: calc(28% / var(--max-L2-number));
+  transform: translate(0, calc(var(--module-height) / -2));
+}
+#Level2 svg .L0.U {
+  width: calc(14% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(14% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.S {
+  width: calc(14% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(28% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.C {
+  width: calc(28% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(42% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.T {
+  width: calc(10% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(70% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.SC {
+  width: calc(42% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(28% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.SC1 {
+  width: calc(28% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(28% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.C1 {
+  width: calc(14% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(42% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
+}
+#Level2 svg .L0.C2 {
+  width: calc(14% / var(--max-L2-number));
+  transform: translate(
+    calc(calc(56% - var(--module-L2-margin)) / var(--max-L2-number)),
+    calc(var(--module-height) / -2)
+  );
 }

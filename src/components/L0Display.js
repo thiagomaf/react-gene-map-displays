@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Display extends React.Component {
+export default class L0Display extends React.Component {
   static defaultProps = {
     multiplier: 50
   };
@@ -36,7 +36,7 @@ export default class Display extends React.Component {
             x="10%"
             y={each_Ypos}
             fill={element.color}
-            className="module"
+            className="module border"
           />
 
           <text x="50%" y={each_Ypos}>

@@ -1,6 +1,6 @@
 import React from "react";
-import Axes from "./axes";
-import Display from "./L0_display";
+import Axes from "./Axes";
+import Display from "./L0Display";
 
 export default class Level0 extends React.Component {
   //static defaultProps = { width: 800, height: 600 };

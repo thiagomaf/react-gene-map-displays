@@ -1,6 +1,6 @@
 import React from "react";
-import Axes from "./axes";
-import Display from "./L2_display";
+import Axes from "./Axes";
+import Display from "./L2Display";
 
 export default class Level2 extends React.Component {
   render() {
